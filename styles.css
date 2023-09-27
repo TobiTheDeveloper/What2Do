@@ -1,0 +1,28 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.upperTopBar{
+    border: 3px solid violet;
+    height: 10vh;
+    width: 86%;
+    float: right;
+    margin-top: 5px;
+}
+
+.main{
+    border: 3px solid pink;
+    width: 86%;
+    float: right;
+    height: 80vh;
+}
+
+.leftNavBar{
+    margin-top: 5px;
+    height: 90vh;
+    width: 14%;
+    border: 3px solid yellow;
+}
+
+
