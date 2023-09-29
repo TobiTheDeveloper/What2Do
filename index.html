@@ -48,6 +48,15 @@
     <!--  -->
 
     <div class="leftNavBar">
+      <!-- Profile Picture -->
+      <img id="profilePicture" src="Default.jpg" alt="Profile Picture" style="width: 50px; margin-top: 10px; margin: 20px ; display: block;"> <br>
+
+      <!-- Input to edit profile picture -->
+      <input type="file" id="profilePictureInput" accept="image/*" style="display: none;">
+      <label for="profile-picture-input" class="edit-profile-icon">
+        <i class="fas fa-camera"></i>
+      </label>
+
       <p id="userGreeting">Hello, </p>
       <!-- This is where the notes written will be stored after a user clicks on the save button -->
       <div id="written-Notes">
