@@ -18,6 +18,10 @@ body{
     height: 80vh;
 }
 
+#mainLogo{
+    width: 90px;
+}
+
 .profile-picture-container {
     display: flex;
     justify-content: center;
