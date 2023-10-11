@@ -44,13 +44,14 @@
 
     <div class="leftNavBar">
       <!-- Profile Picture -->
-      <input type="file" id="fileInput" style="display: none;">
-      <img id="profilePicture" src="Default.jpg" alt="Profile Picture" style="width: 50px; margin-top: 10px; margin: 20px; display: block;"><br>
+      <div class="profile-picture-container">
+        <input type="file" id="fileInput" style="display: none;">
+        <img id="profilePicture" src="Default.jpg" alt="Profile Picture" style="width: 50px; margin-top: 10px; margin: 20px; display: block;"><br>  
+      </div>
 
       <!-- Input to edit profile picture -->
       <input type="file" id="profilePictureInput" accept="image/*" style="display: none;">
       <label for="profile-picture-input" class="edit-profile-icon">
-        <i class="fas fa-camera"></i>
       </label>
 
       <p id="userGreeting">Hello, </p>
