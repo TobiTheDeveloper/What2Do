@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Registration and Profile Picture Upload</title>
+</head>
+<body>
+  <h2>User Registration</h2>
+  <form action="/register" method="POST">
+    <label for="username">Username:</label>
+    <input type="text" name="username" required>
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" name="password" required>
+    <br>
+    <button type="submit">Register</button>
+  </form>
+
+  <h2>User Login</h2>
+  <form action="/login" method="POST">
+    <label for="username">Username:</label>
+    <input type="text" name="username" required>
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" name="password" required>
+    <br>
+    <button type="submit">Login</button>
+  </form>
+
+  <h2>Upload Profile Picture</h2>
+  <form action="/upload" method="POST" enctype="multipart/form-data">
+    <input type="file" name="profilePicture" required>
+    <button type="submit">Upload</button>
+  </form>
+</body>
+</html>
