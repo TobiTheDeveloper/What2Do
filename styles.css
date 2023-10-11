@@ -13,23 +13,21 @@ body{
 } */
 
 .main{
-    border: 3px solid pink;
     width: 86%;
     float: right;
     height: 80vh;
 }
 
 .leftNavBar{
+    border: 3px solid pink;
     margin-top: 1px;
-    height: 90vh;
+    height: 90.1vh;
     width: 14%;
-    background-color: skyblue;
     position: relative;
-    bottom: 14px;
+    bottom: 0px;
 }
 
 #userGreeting{ 
-    border: 1px solid black;
     position: relative;
     bottom: 50px;
     text-align: center;
@@ -46,14 +44,41 @@ body{
     margin-left: auto;
     margin-right: auto;
     display: block;
+    margin-top: 10px;
 }
 
 #yourNote{
     border-radius: 5px;
-    height: 40px;
+    height: 70px;
     width: 99%;
     outline: none;
     margin-left: 2px;
     outline: none;
-    height: 50vh;
+    height: 60vh;
+    resize: none;
 }
+
+#saveButton{
+    background-color: blue;
+    color: white;
+    width: 90px ;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    float: right;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.saved-note {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    cursor: pointer;
+  }
+  
+  .note-textarea {
+    display: none;
+  }
+  

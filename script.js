@@ -26,3 +26,37 @@ document.getElementById('fileInput').addEventListener('change', function() {
         }
     }
 });
+
+function saveMyNote() {
+    // Get the values of the topic and note entered by the user
+    const topic = document.getElementById("topicText").value;
+    const note = document.getElementById("yourNote").value;
+  
+    if (topic.trim() !== "" && note.trim() !== "") {
+      // Create a new div element to display the saved topic and note
+      const noteDiv = document.createElement("div");
+      noteDiv.classList.add("saved-note");
+  
+      // Set the content of the new div with the topic
+      noteDiv.innerHTML = `<h3>${topic}</h3>`;
+      
+      // Create a textarea to display the associated note
+      const noteTextArea = document.createElement("textarea");
+      noteTextArea.classList.add("note-textarea");
+      noteTextArea.value = note;
+      noteDiv.appendChild(noteTextArea);
+  
+      // Append the new div to the "written-Notes" div
+      document.getElementById("written-Notes").appendChild(noteDiv);
+  
+      // Clear the input fields for the next entry
+      document.getElementById("topicText").value = "";
+      document.getElementById("yourNote").value = "";
+  
+      // Save the note data to localStorage
+      saveNoteToLocalStorage(topic, note);
+    } else {
+      alert("Please enter both a topic and a note before saving.");
+    }
+  }
+  
