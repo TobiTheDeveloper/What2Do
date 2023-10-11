@@ -1,15 +1,16 @@
 body{
     margin: 0px;
     padding: 0px;
+    height: 100vh;
 }
 
-.upperTopBar{
+/* .upperTopBar{
     border: 3px solid violet;
     height: 10vh;
     width: 86%;
     float: right;
     margin-top: 5px;
-}
+} */
 
 .main{
     border: 3px solid pink;
@@ -33,4 +34,26 @@ body{
     bottom: 50px;
     text-align: center;
     font-size: 15px;
+}
+
+/* The middle for handling the note taking with topic and notepad */
+
+#topicText {
+    border-radius: 10px;
+    height: 40px;
+    width: 80%;
+    outline: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#yourNote{
+    border-radius: 5px;
+    height: 40px;
+    width: 99%;
+    outline: none;
+    margin-left: 2px;
+    outline: none;
+    height: 50vh;
 }
