@@ -19,10 +19,18 @@ body{
 }
 
 .leftNavBar{
-    margin-top: 5px;
+    margin-top: 1px;
     height: 90vh;
     width: 14%;
-    border: 3px solid yellow;
+    background-color: skyblue;
+    position: relative;
+    bottom: 14px;
 }
 
-
+#userGreeting{ 
+    border: 1px solid black;
+    position: relative;
+    bottom: 50px;
+    text-align: center;
+    font-size: 15px;
+}
