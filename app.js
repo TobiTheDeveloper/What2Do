@@ -7,7 +7,14 @@ const app = express();
 const port = 3000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
+
+
+// Serve static files from the "public" directory
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'asset')));
+
+
+
 app.use(session({ secret: 'your-secret-key', resave: false, saveUninitialized: true }));
 
 const storage = multer.diskStorage({
@@ -22,7 +29,7 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage });
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', '/public/index.html'));
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 app.post('/register', (req, res) => {
