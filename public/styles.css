@@ -20,6 +20,7 @@ body{
 
 #mainLogo{
     width: 90px;
+    height: 30px;
 }
 
 .profile-picture-container {
@@ -30,13 +31,21 @@ body{
   }
   
 .leftNavBar{
-    border: 3px solid pink;
-    margin-top: 1px;
-    height: 90.1vh;
-    width: 14%;
-    position: relative;
-    bottom: 0px;
+    background-color: #333; /* Dark gray background color */
+    color: #fff; /* Text color */
+    width: 210px; /* Set the width of the sidebar */
+    height: 100%; /* Make the sidebar the full height of the viewport */
+    position: fixed; /* Fixed positioning to keep it in view while scrolling */
+    top: 55px; /* Position at the top */
+    left: 0; /* Position at the left */
+    padding: 20px; /* Add padding to the sidebar content */
+    overflow-y: auto ; /* Enable vertical scrolling when content exceeds the height */
+    padding-right: 30px; /* Add padding to the right to accommodate the scrollbar */
+    box-sizing: border-box; /* Ensure padding doesn't increase the width */
+    scroll-behavior: smooth;
 }
+
+
 
 #userGreeting{ 
     position: relative;
@@ -61,9 +70,11 @@ body{
 #yourNote{
     border-radius: 5px;
     height: 70px;
-    width: 99%;
+    width: 95%;
     outline: none;
-    margin-left: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     outline: none;
     height: 60vh;
     resize: none;
@@ -84,12 +95,10 @@ body{
 .saved-note {
     margin-bottom: 10px;
     padding: 10px;
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
     cursor: pointer;
-  }
+}
   
-  .note-textarea {
+.note-textarea {
     display: none;
-  }
+}
   

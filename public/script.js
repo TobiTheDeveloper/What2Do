@@ -38,7 +38,7 @@ function saveMyNote() {
       noteDiv.classList.add("saved-note");
   
       // Set the content of the new div with the topic
-      noteDiv.innerHTML = `<h3>${topic}</h3>`;
+      noteDiv.innerHTML = `<h6>${topic}</h6>`;
       
       // Create a textarea to display the associated note
       const noteTextArea = document.createElement("textarea");
@@ -58,6 +58,10 @@ function saveMyNote() {
     } else {
       alert("Please enter both a topic and a note before saving.");
     }
-  }
+}
+
+function openSavedNote() {
+    
+}
   
 
