@@ -33,7 +33,7 @@ body{
 .leftNavBar{
     background-color: #333; /* Dark gray background color */
     color: #fff; /* Text color */
-    width: 210px; /* Set the width of the sidebar */
+    width: 140px; /* Set the width of the sidebar */
     height: 100%; /* Make the sidebar the full height of the viewport */
     position: fixed; /* Fixed positioning to keep it in view while scrolling */
     top: 55px; /* Position at the top */
